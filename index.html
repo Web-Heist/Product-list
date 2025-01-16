@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icon.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Creepster&family=Skranji&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./product-list.css">
+    <link rel="stylesheet" href="./product-details.css">
+    <script src="./main.js"></script>
+    <title>Product-list</title>
+</head>
+<body>
+     
+    <header class="header">
+           
+        <div class="logo">
+            <a href=" https://web-heist.github.io/Ecommerce-Website/">
+                <img src="logo-colored.svg"  alt=""></a>
+        </div>
+    
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search">
+            <div class="dropdown-container">
+                <select class="dropdown">
+                    <option href="#">All category</option>
+                    <option href="#">Category 1</option>
+                    <option href="#">Category 2</option>
+                </select>
+            </div>
+            <button class="search-button">Search</button>
+        </div>
+
+        <div class="icons">
+            <a href=" https://web-heist.github.io/Ecommerce-Website/#user"><div class="icon">
+                <i class="fa fa-user"></i></a> 
+                <p>Profile</p>
+            </div>
+            <div class="icon">
+              <a href=" https://web-heist.github.io/Ecommerce-Website/#req">  <i class="fa fa-envelope"></i></a> 
+                <p>Message</p>
+            </div>
+            <div class="icon">
+              <a href=" https://web-heist.github.io/Product-list/">    <i class="fa fa-heart"></i></a> 
+                <p>Orders</p>
+            </div>
+            <div class="icon">
+              <a href="">   <i class="fa fa-shopping-cart"></i></a> 
+                <p>Cart</p>
+            </div>
+        </div>
+    </header>
+
+    <nav  class="nav_bar">
+        <a class="nav_item" onclick="catagorybar()"> <i class="fa fa-list"></i> All catagory</a> 
+        <a class="nav_item" href=" https://web-heist.github.io/Ecommerce-Website/#offers">Hot offers</a> 
+        <a class="nav_item" href=" https://web-heist.github.io/Product-list/">Product list</a> 
+        <a class="nav_item" href=" https://web-heist.github.io/Product-details/">Product detail</a> 
+        <a class="nav_item" href="#">Gift boxes</a> 
+        <a class="nav_item">
+        <select class="dropdown" style="border-color:white;">
+            <option href="#">Help</option>
+            <option href="#">Resources</option>
+            <option href="#">Support</option>
+        </select>
+      </a>
+    <a class="nav_item2 ">  
+        <select class="dropdown" style="border-color:white;">
+        <option  href="#">English,USD</option>
+        <option href="#">Urdu</option>
+        <option href="#">German</option>
+        <option href="#">Italian</option>
+    </select> 
+</a>
+<a class="nav_item"> Ship to <img src="germany.png" width="30rem" alt="">
+<select class="dropdown" style="border-color:white; font-size:0.9rem; width:3rem;">
+ <option > </option>
+<option value="US">&#127466;&#127480; </option>
+<option value="AU">&#127462;&#127482; </option>
+<option value="CN">&#127462;&#127475; </option>
+    </select> 
+</a>  
+</nav>
+
+
+<div class="category-bar" id="catagorybar">
+
+    <div class="section">
+        <h3>Category</h3>
+        <label><input type="checkbox">Mobile accessory</label>
+        <label><input type="checkbox"> Electronics</label>
+        <label><input type="checkbox">SmartPhones</label>
+        <label><input type="checkbox"> Home Appliances</label>
+        <h6 onclick="seemorecatagory()" id="toggle-button1">See all</h6>
+        <div id="extra-categories"></div>
+    </div>
+
+    <div class="section">
+        <h3>Brands</h3>
+        <label><input type="checkbox"> Samsung</label>
+        <label><input type="checkbox"> Apple</label>
+        <label><input type="checkbox"> Poco</label>
+        <label><input type="checkbox"> Lenovo</label>
+        <h6 onclick="seemorebrand()" id="toggle-button2">See all</h6>
+        <div id="extra-brand"></div>
+    </div>
+
+    <div class="section">
+        <h3>Features</h3>
+        <label><input type="checkbox">Plastic cover</label>
+        <label><input type="checkbox">Metalic</label>
+        <label><input type="checkbox">8GB Ram</label>
+        <h6 onclick="seemorefeature()" id="toggle-button3">See all</h6>
+        <div id="extra-feature"></div>
+    </div>
+
+    <div class="section">
+        <h3>Price Range</h3>
+        <input type="range" min="100" max="1000" step="10">
+        <div class="price-labels">
+            <span>MIN</span>
+            <span>MAX</span>
+        </div>
+        <div class="section">
+            <button>Apply</button>
+        </div>
+    </div>
+    <div class="section">
+        <h3>Condition</h3>
+        <label><input type="radio" name="condition">Any</label>
+        <label><input type="radio" name="condition">Brand New</label>
+        <label><input type="radio" name="condition">Used</label>
+        <label><input type="radio" name="condition">Refurbished</label>
+    </div>
+
+    <div class="section">
+        <h3>Rating</h3>
+        <label>
+            <input type="checkbox" name="rating">
+            ⭐⭐⭐⭐⭐
+        </label>
+        <label>
+            <input type="checkbox" name="rating">
+            ⭐⭐⭐⭐
+        </label>
+        <label>
+            <input type="checkbox" name="rating">
+            ⭐⭐⭐
+        </label>
+        <label>
+            <input type="checkbox" name="rating">
+            ⭐⭐
+        </label>
+        <label>
+            <input type="checkbox" name="rating">
+            ⭐
+        </label>
+    </div>
+</div>
+
+<menuheader>
+  <nav>
+    <ul>
+      <li><a href=" https://web-heist.github.io/Ecommerce-Website/">Home</a></li>
+      <li><a href="#">></a></li>
+      <li><a href=" https://web-heist.github.io/Product-details/">Clothing</a></li>
+      <li><a href="#">></a></li>
+      <li><a href="#">Men's Wear</a></li>
+      <li><a href="#">></a></li>
+      <li><a href="#">Summer Clothing</a></li>
+    </ul>
+  </nav>
+</menuheader>
+
+<div class="filters-and-products">
+   
+    <section class="products">
+      <div class="toolbar">
+        <p>12,911 items in <strong>Mobile Accessories</strong></p>
+        <div class="toolbar-options">
+          <label><input type="checkbox"> Verified only</label>
+          <select>
+            <option>Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+          </select>
+          <div class="view-toggle">
+            <button id="list-view"><i class="fa fa-th-large"></i></button>
+            <button id="grid-view"><i class="fa fa-list"></i></button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="product-list">
+
+        <div class="product-item">
+          <img src="t2.jpg" alt="Product Image" id="image1">
+          <div class="product-info">
+            <h4>Canon Camera EOS 2000</h4>
+            <p1 class="price">$998.00 <span class="old-price"> $1128.00</span></p1>
+            <p>⭐ 7.5 | 154 orders | Free Shipping</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+            <button>View Details</button>
+
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img src="t3.jpg" alt="Product Image" id="image2">
+          <div class="product-info">
+            <h4>GoPro HERO6 4K Action Camera</h4>
+            <p1 class="price">$998.00</p1>
+            <p>⭐ 7.5 | 154 orders | Free Shipping</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+            <button>View Details</button>
+
+          </div>
+        </div>
+
+        <div class="product-item">
+            <img src="t1.jpg" alt="Product Image" id="image3">
+            <div class="product-info">
+              <h4>GoPro HERO6 4K Action Camera</h4>
+            <p1 class="price">$920.00 <span class="old-price"> $1320.00</span></p1>
+              <p>⭐ 7.5 | 154 orders | Free Shipping</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              <button>View Details</button>
+
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="t8.jpg" alt="Product Image" id="image4">
+            <div class="product-info">
+              <h4>Canon Camera EOS 2000</h4>
+              <p1 class="price">$998.00 <span class="old-price"> $1128.00</span></p1>
+              <p>⭐ 7.5 | 154 orders | Free Shipping</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              <button>View Details</button>
+  
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="t5.jpg" alt="Product Image" id="image5">
+            <div class="product-info">
+              <h4>Canon Camera EOS 2000</h4>
+              <p1 class="price">$998.00 <span class="old-price"> $1128.00</span></p1>
+              <p>⭐ 7.5 | 154 orders | Free Shipping</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              <button>View Details</button>
+  
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="t6.jpg" alt="Product Image" id="image6">
+            <div class="product-info">
+              <h4>GoPro HERO6 4K Action Camera</h4>
+              <p1 class="price">$998.00</p1>
+              <p>⭐ 7.5 | 154 orders | Free Shipping</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              <button>View Details</button>
+      </div>
+    </div>
+    
+  </section>
+  </div>
+  
+  <div class="pagination">
+    <button class="page-btn prev-btn"  onclick="changeImage5()">Previous</button>
+    <div class="page-numbers" >
+      <button class="page-btn active" onclick="changeImage1()">1</button>
+      <button class="page-btn"  onclick="changeImage2()">2</button>
+      <button class="page-btn"  onclick="changeImage3()">3</button>
+      <span class="dots">...</span>
+      <button class="page-btn"  onclick="changeImage4()">10</button>
+    </div>
+    <button class="page-btn next-btn"   onclick="changeImage6()">Next</button>
+  </div>
+    
+
+  <div class="news-letter">
+    <h2> <b> Subscribe on our newsletter </b></h2>
+    <p>Get daily news on upcomming offers from many supplier all over the world</p>
+    <div class="email-section">
+    <i class="fa fa-envelope"></i>
+    <input type="text" class="email-input" placeholder="Email">
+    <button class="email-btn">Subscribe</button>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="brand-icon">
+                    <img src="logo-colored.svg" alt="">
+                </div>
+                <p>Best information about the company goes here but now lorem ipsum is</p>
+                <div class="social-icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>About</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Find Store</li>
+                        <li>Categories</li>
+                        <li>Blogs</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Partnership</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Find Store</li>
+                        <li>Categories</li>
+                        <li>Blogs</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Information</h3>
+                    <ul>
+                        <li>Help Center</li>
+                        <li>Money Refund</li>
+                        <li>Shipping</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>For users</h3>
+                    <ul>
+                        <li>Login</li>
+                        <li>Register</li>
+                        <li>Settings</li>
+                        <li>My Orders</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Get app</h3>
+                    <div class="app-buttons">
+                      <img class="img1" src="apple.png" alt="">
+                      <img class="img2" src="google.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Ecommerce.</p>
+            <div class="language-selector">
+                <img src="usa.png" alt="">
+                <span>English</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
