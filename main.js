@@ -103,30 +103,30 @@ const seemorefeature =()=> {
 
 function changeImage1() {
     // Manually set the source for each image
-    document.getElementById("image1").src = "./public/2.jpg";  // First image
-    document.getElementById("image2").src = "./public/3.jpg";  // Second image
-    document.getElementById("image3").src = "./public/1.jpg";  // Third image
-    document.getElementById("image4").src = "./public/8.jpg";  // Fourth image
-    document.getElementById("image5").src = "./public/5.jpg";  // Fifth image
-    document.getElementById("image6").src = "./public/6.jpg";  // Sixth image
+    document.getElementById("image1").src = "2.jpg";  // First image
+    document.getElementById("image2").src = "3.jpg";  // Second image
+    document.getElementById("image3").src = "1.jpg";  // Third image
+    document.getElementById("image4").src = "8.jpg";  // Fourth image
+    document.getElementById("image5").src = "5.jpg";  // Fifth image
+    document.getElementById("image6").src = "6.jpg";  // Sixth image
   }
   function changeImage2() {
     // Manually set the source for each image
-    document.getElementById("image1").src = "./public/4.jpg";  // First image
-    document.getElementById("image2").src = "./public/5.jpg";  // Second image
-    document.getElementById("image3").src = "./public/7.jpg";  // Third image
-    document.getElementById("image4").src = "./public/9.jpg";  // Fourth image
-    document.getElementById("image5").src = "./public/10.jpg";  // Fifth image
-    document.getElementById("image6").src = "./public/1.jpg";  // Sixth image
+    document.getElementById("image1").src = "4.jpg";  // First image
+    document.getElementById("image2").src = "5.jpg";  // Second image
+    document.getElementById("image3").src = "7.jpg";  // Third image
+    document.getElementById("image4").src = "9.jpg";  // Fourth image
+    document.getElementById("image5").src = "10.jpg";  // Fifth image
+    document.getElementById("image6").src = "1.jpg";  // Sixth image
 
   }function changeImage3() {
     // Manually set the source for each image
-    document.getElementById("image1").src = "./public/9.jpg";  // First image
-    document.getElementById("image2").src = "./public/6.jpg";  // Second image
-    document.getElementById("image3").src = "./public/1.jpg";  // Third image
-    document.getElementById("image4").src = "./public/8.jpg";  // Fourth image
-    document.getElementById("image5").src = "./public/3.jpg";  // Fifth image
-    document.getElementById("image6").src = "./public/2.jpg";  // Sixth image
+    document.getElementById("image1").src = "9.jpg";  // First image
+    document.getElementById("image2").src = "6.jpg";  // Second image
+    document.getElementById("image3").src = "1.jpg";  // Third image
+    document.getElementById("image4").src = "8.jpg";  // Fourth image
+    document.getElementById("image5").src = "3.jpg";  // Fifth image
+    document.getElementById("image6").src = "2.jpg";  // Sixth image
 
   }function changeImage4() {
     // Manually set the source for each image
